@@ -28,6 +28,7 @@ public class SmthCrawler {
 				return new SmthCrawler();			
 			}
 			return crawlerInstance;
+			
 		
 	}
 	

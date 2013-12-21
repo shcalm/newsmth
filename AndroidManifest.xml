@@ -35,6 +35,13 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <activity android:name="com.phgame.newsmth.ui.PostDetailActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait" >
+                        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.phgame.openpostdetail"/>
+            </intent-filter>
+        </activity>
     </application>
     
 
