@@ -17,7 +17,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme" android:name=".ui.MyApplication">
         <activity
             android:name="com.phgame.newsmth.ui.MainActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait"
@@ -28,6 +28,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+<activity android:name="com.phgame.newsmth.ui.Login"
+          android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait" >
+                        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
         
         <activity android:name="com.phgame.newsmth.ui.MainView"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait" >

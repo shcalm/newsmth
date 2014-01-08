@@ -38,5 +38,7 @@
 	<com.phgame.newsmth.ui.widget.PullToRefreshListView
 	  	android:id="@+id/frame_listview_question"
 	    style="@style/widget_listview"/>
-	
+		<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="allforum frame"/>
 </LinearLayout>

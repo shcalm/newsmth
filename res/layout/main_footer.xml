@@ -9,13 +9,14 @@
 	<RadioButton 
 		android:id="@+id/main_footbar_topten"
 		style="@style/main_footbar_radio"
-		android:drawableTop="@drawable/widget_bar_news"/>
+		android:drawableTop="@drawable/widget_bar_news"
+		/>
 	<ImageView
 		style="@style/main_footbar_cutline"
 		android:src="@drawable/widget_bar_cut_off"/>
 	
 	<RadioButton 
-		android:id="@+id/main_footbar_tweet"
+		android:id="@+id/main_footbar_pciture"
 		style="@style/main_footbar_radio"
 		android:drawableTop="@drawable/widget_bar_tweet"/>
 	<ImageView
@@ -23,15 +24,16 @@
 		android:src="@drawable/widget_bar_cut_off"/>
 	
 	<RadioButton
-		android:id="@+id/main_footbar_active"
+		android:id="@+id/main_footbar_allforum"
 		style="@style/main_footbar_radio"
 		android:drawableTop="@drawable/widget_bar_active"/>
 	
 	<ImageView
 		style="@style/main_footbar_cutline"
 		android:src="@drawable/widget_bar_cut_off"/>
-	<ImageView
+	
+	<RadioButton
 		android:id="@+id/main_footbar_setting"
-		style="@style/main_footbar_image"
-		android:src="@drawable/widget_bar_more"/>
+		style="@style/main_footbar_radio"	
+		android:drawableTop="@drawable/widget_bar_more"/>
 </LinearLayout>

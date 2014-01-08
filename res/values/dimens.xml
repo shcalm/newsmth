@@ -63,4 +63,7 @@
     <dimen name="space_2">2.0dip</dimen>
     <dimen name="space_1">1.0dip</dimen>
     
+    <dimen name="image_thumbnail_size">100dip</dimen>
+    <dimen name="image_thumbnail_spacing">1dip</dimen>
+    
 </resources>

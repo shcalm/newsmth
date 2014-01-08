@@ -2,6 +2,7 @@ package com.phgame.newsmth.task;
 
 import java.util.Vector;
 
+import com.example.android.bitmapfun.util.OnCompleteListener;
 import com.phgame.newsmth.util.SmthCrawler;
 import com.phgame.newsmth.data.*;
 
@@ -22,6 +23,7 @@ public class PostDetailTask extends AsyncTask<String, Integer, String>{
 	Context ctx;
 	StringBuffer forumname= new StringBuffer("");
 	StringBuffer subjectname = new StringBuffer("");
+	private OnCompleteListener listener = null;
 	
 	public PostDetailTask(Context ctx){
 		//this.adapter = adapter;
@@ -29,6 +31,10 @@ public class PostDetailTask extends AsyncTask<String, Integer, String>{
 		this.view = ((PostDetailActivity)ctx).getListView();
 		
 		this.adapter = (PostDetailAdapter) view.getAdapter();
+	}
+	
+	public void setOnCompleteListener(OnCompleteListener listener){
+		this.listener = listener;
 	}
 	
 	@Override
@@ -55,6 +61,9 @@ public class PostDetailTask extends AsyncTask<String, Integer, String>{
 		
 		((PostDetailActivity) ctx).updateUI(forumname.toString(),subjectname.toString());
 		//view.onRefreshComplete();
+		if(listener != null){
+			listener.onComplete();
+		}
 		super.onPostExecute(result);
 	}
 	
